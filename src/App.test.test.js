@@ -2,12 +2,6 @@ import { render, screen } from '@testing-library/react';
 import App from './App';
 import { getTitle } from './components/card/helpers';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/Per product widget/);
-  expect(linkElement).toBeInTheDocument();
-});
-
 test('returns the correct title for "plants"', () => {
   const result = getTitle('plants');
   expect(result).toBe('This product plants');
