@@ -9,7 +9,7 @@ amount, action) and mutable settings (color, active and linked states).
 
 ## Getting Started
 
-You can visit the App clicking here: [PRODUCTS WIDGET](https://crowded-bands.web.app/)
+You can visit the App clicking here: [PRODUCTS WIDGET](https://greenspark-badge.web.app/)
 
 Or you can: 
 
