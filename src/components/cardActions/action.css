@@ -1,0 +1,93 @@
+.link-container {
+    position: relative;
+    margin-top: 10px;
+}
+
+
+.action-text {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    cursor: pointer;
+}
+
+.info-text {
+    position: absolute;
+    top: 25px;
+    left: 50px;
+    font-size: 10px;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.1);
+    --webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.1);
+    width: 100px;
+    display: none;
+    z-index: 99;
+}
+
+
+.info-icon {
+    width: 16px;
+    height: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.action-text:hover .info-text {
+    display: block;
+}
+
+.check-container {
+    padding: 0px 10px;
+    border-radius: 50px;
+    --webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    background-color: transparent;
+    position: absolute;
+    right: -10px;
+}
+
+.check-container:hover {
+    background-color: var(--light-green-color);
+    opacity: .5;
+}
+
+.checked-icon {
+    width: 26px;
+    z-index: -1;
+}
+
+.badge-container {
+    gap: 3px;
+}
+
+.color-rec {
+    width: 16px;
+    height: 16px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.color-rec:hover {
+    opacity: .8;
+}
+
+.color-selected {
+    border-color: var(--gray-color);
+}
+
+.select-icon {
+    width: 40px; 
+    height: 30px;
+}
+
+.select-icon circle {
+    fill: transparent;
+}
+
+.select-icon:hover circle {
+    fill: var(--light-green-color);
+}

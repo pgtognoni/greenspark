@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import { getData } from './apiCalls';
+import ProductList from './components/card/ProductList';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './index.css';
 
 function App() {
+
+  const [ data, setData ] = useState([]);
+  const [ selected, setSelected ] = useState(null);
+
+  const apiCall = async () => { 
+    const data = await getData();
+    if (data) {
+      setData(data);
+    }
+  }
+
+  useEffect(() => {
+    apiCall();
+  },[])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App d-flex justify-content-center align-items-start">
+      <ProductList data={data} setSelected={setSelected} selected={selected} />
     </div>
   );
 }

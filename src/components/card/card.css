@@ -1,0 +1,83 @@
+.card-container {
+    margin: 20px auto;
+    width: 230px;
+    color: var(--green-color);
+}
+
+.background-green {
+    background-color: var(--green-color);
+}
+.background-blue {
+    background-color: var(--blue-color);
+}
+
+.background-black {
+    background-color: var(--black-color);
+    color: var(--green-color);
+}
+
+.background-beige {
+    background-color: var(--beige-color);
+    color: var(--green-color) !important;
+}
+
+.background-white {
+    background-color: var(--white-color);
+    color: var(--green-color) !important;
+}
+
+.background-green svg path,
+.background-blue svg path,
+.background-black svg path {
+    fill:  var(--white-color);
+}
+.background-beige svg path,
+.background-white svg path {
+    fill:  var(--green-color);
+}
+
+.title-container {
+    color: var(--white-color);
+    border-radius: 6px;
+    --webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.01);
+    --webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.01);
+    -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.01);
+    gap: 10px;
+    padding: 10px;
+}
+
+.brand-icon {
+    gap: 4px;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+}
+
+.brand-name {
+    width: 40px;
+}
+
+.icon-plants path,
+.icon-collects path,
+.greenspark-plants path,
+.greenspark-collects path {
+    fill:  var(--white-color);
+}
+
+.title-desc {
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+}
