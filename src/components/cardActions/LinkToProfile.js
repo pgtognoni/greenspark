@@ -6,14 +6,21 @@ import './action.css'
 
 function LinkToProfile() {
 
+    const text = 'This widget links directly to your public profile so that you can easily share your impact with your customers. Turn it off here if you do not want the badge to link to it.'
+const linK = {'text': 'View your Profile', 'link': 'https://www.getgreenspark.com/'}
     const [ checked, setChecked ] = useState(false)
 
   return (
     <div className='d-flex justify-content-between align-items-center link-container'>
-        <span className='action-text'>
+        <span className='action-text d-flex'>
             Link to Public Profile
-            <Info className='info-icon' />
-            <span className='info-text'>This will make this product visible</span>
+            <div className='info-tooltip'>
+                <Info className='info-icon' />
+                <div className='info-text'>
+                    <p>{text}</p>
+                    <a href={linK.link} target='_blank' rel="noreferrer">{linK.text}</a>
+                </div>
+            </div>
         </span>
         <div className='check-container'
             onClick={() => setChecked(!checked)}
