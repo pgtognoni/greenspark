@@ -14,7 +14,7 @@ function ProducTitle({ data, badge }) {
         </div>
         <div className='product-type d-flex flex-column justify-content-center align-items-start'>
             <span className='title-desc text-start'>{getTitle(data.action)}</span>
-            <spam className='title text-start'>{data.amount} {data.type}</spam>
+            <span className='title text-start'>{data.amount} {data.type}</span>
         </div>
     </div>
 )

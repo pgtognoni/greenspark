@@ -1,5 +1,5 @@
 .card-container {
-    margin-top: 20px;
+    margin: 20px 1px 0;
     width: 230px;
     color: var(--green-color);
 }

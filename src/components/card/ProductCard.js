@@ -6,7 +6,7 @@ import ActiveBadge from '../cardActions/ActiveBadge'
 
 function ProductCard({ data, selected, setSelected}) {
 
-    const [ badge, setBadge ] = useState('green')
+    const [ badge, setBadge ] = useState(data.selectedColor)
 
   return (
     <div className='card-container'>
