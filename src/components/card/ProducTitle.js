@@ -5,7 +5,6 @@ import { ReactComponent as Greenspark } from '../../assets/greenspark.svg'
 import './card.css'
 function ProducTitle({ data, badge }) {
 
-    console.log(data)
   return (
     <div className={`title-container background-${badge} d-flex `}>
         <div className='brand-icon d-flex flex-column align-items-center justify-content-center'>

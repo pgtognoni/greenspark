@@ -3,6 +3,19 @@
     margin-top: 10px;
 }
 
+.check-container {
+    border: none;
+}
+
+.check-container:disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.check-container:disabled:hover {
+    background-color: transparent;
+}
+
 
 .action-text {
     font-size: 14px;
@@ -98,7 +111,11 @@
     width: 16px;
     height: 16px;
     border: 2px solid transparent;
-    cursor: pointer;
+}
+
+.color-rec:disabled:hover {
+    cursor: not-allowed;
+    pointer-events: none;
 }
 
 .color-rec:hover {

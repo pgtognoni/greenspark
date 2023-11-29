@@ -11,8 +11,8 @@ function ProductCard({ data, selected, setSelected}) {
   return (
     <div className='card-container'>
         <ProducTitle data={data} badge={badge} />
-        <LinkToProfile />
-        <BadgeColor setBadge={setBadge} badge={badge}/>
+        <LinkToProfile selected={selected} id={data.id} />
+        <BadgeColor setBadge={setBadge} badge={badge} selected={selected}  id={data.id}/>
         <ActiveBadge selected={selected} setSelected={setSelected} id={data.id} />
     </div>
   )

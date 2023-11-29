@@ -1,9 +1,13 @@
 import React from 'react'
 
-function BadgeColor({setBadge, badge}) {
+function BadgeColor({setBadge, badge, selected, id }) {
 
     const handleClicked = (value) => {
-        setBadge(value.color)
+        if (selected === id) {
+            setBadge(value.color) 
+        } else {
+            return
+        }
     }
 
     const colorsArray = [
@@ -21,11 +25,17 @@ function BadgeColor({setBadge, badge}) {
         </span>
         <div className='badge-container d-flex justify-content-end ' >
             {colorsArray.map((item, index) => {
-                return <div key={index} 
+                return <button
+                    aria-label='change widget background color' 
+                    aria-current={badge}
+                    aria-disabled={selected === id ? false : true} 
+                    disabled={selected === id ? false : true}
+                    key={index} 
                     className={`color-rec ${badge === item.color ? 'color-selected' : '' }`} 
                     style={{backgroundColor: `${item.code}`}} 
                     onClick={() => handleClicked(item)} 
-                    />
+                
+                    ></button>
             })}
         </div>
     </div>
